@@ -47,15 +47,15 @@ int main(void) {
 	printf("请输入一个大写字母：_\b");
 	scanf_s("%c", &ch, 1);
 
-	for (i = 0; i <= ch - 65; i++) {
-		for (j = 0; j < ch - 66 - i; j++) {
+	for (i = 'A'; i <= ch; i++) {
+		for (j = 0; j < ch - i; j++) {
 			printf(" ");
 		}
-		for (k = 0; k <= i; k++) {
-			printf("%c", 'A' + k);
+		for (k = 'A'; k <= i; k++) {
+			printf("%c", k);
 		}
-		for (m = 0; m < i; m++) {
-			printf("%c", 64 + i - m);
+		for (m = 1; m <= k - 'B'; m++) {
+			printf("%c", k - m - 1);
 		}
 		printf("\n");
 	}
