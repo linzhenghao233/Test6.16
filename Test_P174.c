@@ -73,14 +73,27 @@ int main(void) {
 	//}
 
 //7.
-	int i;
-	char ch[20] = { 0 };
+	//int i;
+	//char ch[20] = { 0 };
 
-	printf("请输入一个单词：");
-	scanf_s("%s", &ch, 20);
-	for (i = strlen(ch); i >= 0; i--) {
-		printf("%c", ch[i]);
+	//printf("请输入一个单词：");
+	//scanf_s("%s", &ch, 20);
+	//for (i = strlen(ch); i >= 0; i--) {
+	//	printf("%c", ch[i]);
+	//}
+
+//8.
+	double db1, db2;
+
+	printf("请输入两个浮点数：");
+	int status = scanf_s("%lf %lf", &db1, &db2);
+	while (status == 2) {
+		printf("两数之差除以两数之积的结果为：");
+		printf("%lf\n", (db1 - db2) / (db1 * db2));
+		printf("请输入两个浮点数：");
+		int status = scanf_s("%lf %lf", &db1, &db2);
 	}
+	printf("请输入正确的数字！");
 
 	return 0;
 }
