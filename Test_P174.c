@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+double db(double db1, double db2);
+
 int main(void) {
 //1.
 	//char ch[26] = {0};
@@ -83,17 +85,39 @@ int main(void) {
 	//}
 
 //8.
-	double db1, db2;
+	//double db1, db2;
 
-	printf("请输入两个浮点数：");
-	int status = scanf_s("%lf %lf", &db1, &db2);
-	while (status == 2) {
-		printf("两数之差除以两数之积的结果为：");
-		printf("%lf\n", (db1 - db2) / (db1 * db2));
-		printf("请输入两个浮点数：");
-		int status = scanf_s("%lf %lf", &db1, &db2);
-	}
-	printf("请输入正确的数字！");
+	//printf("请输入两个浮点数：");
+	//int status = scanf_s("%lf %lf", &db1, &db2);
+	//while (status == 2) {
+	//	printf("两数之差除以两数之积的结果为：");
+	//	printf("%lf\n", (db1 - db2) / (db1 * db2));
+	//	printf("请输入两个浮点数：");
+	//	status = scanf_s("%lf %lf", &db1, &db2);
+	//}
+	//printf("请输入正确的数字！");
+
+//9.
+	//double db1, db2;
+
+	//printf("请输入两个浮点数：");
+	//int status = scanf_s("%lf %lf", &db1, &db2);
+	//while (status == 2) {
+	//	printf("两数之差除以两数之积的结果为：");
+	//	db(db1, db2);
+	//	printf("请输入两个浮点数：");
+	//	status = scanf_s("%lf %lf", &db1, &db2);
+	//}
+	//printf("请输入正确的数字！");
+
+//10.
+	
+
+	return 0;
+}
+
+double db(double db1, double db2) {
+	printf("%lf\n", (db1 - db2) / (db1 * db2));
 
 	return 0;
 }
