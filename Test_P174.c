@@ -111,6 +111,34 @@ int main(void) {
 	//printf("请输入正确的数字！");
 
 //10.
+	//int num_min, num_max, status;
+	//int sum = 0;
+
+	//printf("请输入一个上限整数和一个下限整数：");
+	//scanf_s("%d %d", &num_min, &num_max);
+	//status = num_max > num_min;
+	//while (status == 1) {
+	//	for (sum = 0; num_min <= num_max; num_min++) {
+	//		sum += num_min * num_min;
+	//	}
+	//	printf("下限到上限范围内所有整数的平方和：%d\n", sum);
+	//	printf("请输入一个上限整数和一个下限整数：");
+	//	scanf_s("%d %d", &num_min, &num_max);
+	//	status = num_max > num_min;
+	//}
+	//printf("结束！");
+
+//11.
+	//int int_arr[10];
+	//int i;
+
+	//printf("请输入8个整数：");
+	//for(i = 0; i < 8; i++)
+	//	scanf_s("%d", &int_arr[i]);
+	//for(i = 7; i >= 0; i--)
+	//	printf("倒序打印：%d ", int_arr[i]);
+
+//12.
 	
 
 	return 0;
