@@ -139,6 +139,26 @@ int main(void) {
 	//	printf("倒序打印：%d ", int_arr[i]);
 
 //12.
+	int num, i;
+	double sum1, sum2;
+
+	printf("输入需要计算的项数：");
+	scanf_s("%d", &num);
+	while (num > 0) {
+		for (i = 1, sum1 = 0, sum2 = 0; i <= num; i++) {
+			sum1 += 1.0 / (double)i;
+			if (i % 2 == 0) {
+				sum2 += 1.0 / (double)i;
+			}
+			else {
+				sum2 -= 1.0 / (double)i;
+			}
+		}
+		printf("第一个无限序列的前%d项计算之和是%lf\n", num, sum1);
+		printf("第二个无限序列的前%d项计算之和是%lf\n", num, sum2);
+		printf("输入需要计算的项数：");
+		scanf_s("%d", &num);
+	}
 	
 
 	return 0;
