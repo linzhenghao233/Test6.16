@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 double db(double db1, double db2);
 
@@ -159,6 +160,42 @@ int main(void) {
 	//	printf("输入需要计算的项数：");
 	//	scanf_s("%d", &num);
 	//}
+	
+//13.
+	//int arr[10], i, j = 0;
+	//
+	//for (i = 0; i < 8; i++) {
+	//	arr[i] = pow(2, i + 1);
+	//}
+	//do {
+	//	printf("%d ", arr[j]);
+	//	j++;
+	//} 
+	//while (j < 8);
+
+//14.
+	//double arr1[10], arr2[10], sum;
+	//int i, j;
+
+	//printf("请输入8个数：");
+	//for (i = 0; i < 8; i++) {
+	//	scanf_s("%lf", &arr1[i]);
+	//}
+	//for (i = 0; i < 8; i++) {
+	//	for (j = 0, sum = 0; j <= i; j++) {
+	//		sum += arr1[j];
+	//	}
+	//	arr2[i] = sum;
+	//}
+	//for (i = 0; i < 8; i++) {
+	//	printf("%lf	", arr1[i]);
+	//}
+	//printf("\n");
+	//for (i = 0; i < 8; i++) {
+	//	printf("%lf	", arr2[i]);
+	//}
+
+//15.
 	
 
 	return 0;
