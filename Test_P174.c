@@ -196,7 +196,16 @@ int main(void) {
 	//}
 
 //15.
-	
+	char ch[255];
+	int i = 0;
+
+	printf("ÇëÊäÈëÒ»¾ä»°£º");
+	while (scanf_s("%c", &ch[i], 255) == 1) {
+		if (ch[i] == "\n")
+			for (; i >= 0; i--)
+				printf("%c", ch[i]);
+		i++;
+	}
 
 	return 0;
 }
