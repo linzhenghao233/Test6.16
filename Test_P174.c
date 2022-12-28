@@ -196,15 +196,50 @@ int main(void) {
 	//}
 
 //15.
-	char ch[255];
-	int i = 0;
+	//char ch[255];
+	//int i = 0;
 
-	printf("请输入一句话：");
-	while (scanf_s("%c", &ch[i], 255) == 1) {
-		if (ch[i] == "\n")
-			for (; i >= 0; i--)
-				printf("%c", ch[i]);
-		i++;
+	//printf("请输入一句话：");
+	//while (scanf_s("%c", &ch[i], 255)) {
+	//	if (ch[i] == '\n')
+	//		for (; i >= 0; i--)
+	//			printf("%c", ch[i]);
+	//	i++;
+	//}
+	//printf("Done.");
+
+//16.
+	//double Da_money = 100, De_money = 100;
+	//int year = 0;
+
+	//do {
+	//	Da_money += 10;
+	//	De_money += De_money * 0.05;
+	//	year++;
+	//} while (Da_money > De_money);
+	//printf("De需要%d年才可以超过Da\n", year);
+	//printf("Da的钱：%lf\n", Da_money);
+	//printf("De的钱：%lf\n", De_money);
+
+//17.
+	//double CL_money = 100;
+	//int year = 0;
+
+	//while (CL_money > 0) {
+	//	CL_money += CL_money * 0.08;
+	//	CL_money -= 10;
+	//	year++;
+	//}
+	//printf("%d年后会把账户的钱取完。", year);
+
+//18.
+	int person = 5, week = 1;
+
+	while (person <= 150) {
+		person -= week;
+		person *= 2;
+		printf("第%d周博士的社交圈朋友数：%d\n", week, person);
+		week++;
 	}
 
 	return 0;
